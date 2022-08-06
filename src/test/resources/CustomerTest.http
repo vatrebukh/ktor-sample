@@ -1,4 +1,4 @@
-POST http://127.0.0.1:8080/customer
+POST http://127.0.0.1:8080/api/customer
 Content-Type: application/json
 
 {
@@ -7,3 +7,7 @@ Content-Type: application/json
   "lastName": "Smith",
   "email": "jane.smith@company.com"
 }
+
+###
+GET http://127.0.0.1:8080/api/customer
+Content-Type: application/json
