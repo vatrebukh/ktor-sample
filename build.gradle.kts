@@ -3,6 +3,7 @@ val kotlin_version: String by project
 val logback_version: String by project
 val exposed_version: String by project
 val h2_version: String by project
+val bootstrap_version: String by project
 
 plugins {
     application
@@ -36,6 +37,9 @@ dependencies {
     implementation("com.h2database:h2:$h2_version")
 
     implementation("io.ktor:ktor-network-tls-certificates:$ktor_version")
+
+    implementation("io.ktor:ktor-server-webjars:$ktor_version")
+    implementation("org.webjars:bootstrap:$bootstrap_version")
 
     implementation("ch.qos.logback:logback-classic:$logback_version")
     testImplementation("io.ktor:ktor-server-tests-jvm:$ktor_version")

@@ -4,7 +4,7 @@
     <html lang="en">
     <head>
         <title>Kotlin Journal</title>
-
+        <link rel="stylesheet" href="/assets/bootstrap/bootstrap.css">
     </head>
     <body style="text-align: center; font-family: sans-serif">
     <h1>Kotlin Ktor Journal </h1>

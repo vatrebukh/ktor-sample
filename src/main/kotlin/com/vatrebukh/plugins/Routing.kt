@@ -5,6 +5,7 @@ import io.ktor.server.application.*
 import io.ktor.server.http.content.*
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
+import io.ktor.server.webjars.*
 
 fun Application.configureRouting() {
 
@@ -22,6 +23,10 @@ fun Application.configureRouting() {
         static("/static") {
             resources("files")
         }
+    }
+
+    install(Webjars) {
+        path = "assets"
     }
 
 }
